@@ -1,0 +1,27 @@
+version: v1beta8
+images:
+  default:
+    image: ayal26/orders
+deployments:
+- name: orders
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: ayal26/orders
+      service:
+        ports:
+        - port: 8001
+dev:
+  ports:
+  - imageName: default
+    forward:
+    - port: 8001
+  open:
+  - url: http://localhost:8001
+  sync:
+  - imageName: default
+    excludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml

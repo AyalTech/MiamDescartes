@@ -1,0 +1,120 @@
+.container-home{
+
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.title-picture {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title-picture-link {
+  color: #c62512;
+}
+
+.title-picture-link:hover {
+  color: #FF2E17;
+}
+
+.subtitle-picture {
+  text-align: center;
+  font-weight: 900;
+  color: #d0d0d0;
+}
+
+.subtitle-picture:hover {
+  color: white;
+}
+
+
+.carte-picture {
+  //background-image: url("../../../assets/DescartesMenu.jpg");
+  background: linear-gradient(90deg, rgba(24,30,44,1) 0%, rgba(55,61,73,1) 100%);
+  width: 60rem;
+  height: 90rem;
+}
+
+.carte-title{
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.carte-article {
+  padding: 1em 3em 3em;
+  width: 100vw;
+}
+
+
+@media (min-width: 0px) and (max-width: 370px) {
+  .banner{
+    height: 15rem;
+    background: linear-gradient(90deg, rgba(24,30,44,1) 0%, rgba(55,61,73,1) 100%);
+  }
+
+  .title-picture {
+    font-size: 1rem;
+  }
+
+  .carte-article {
+    padding: 1rem 0 0;
+  }
+
+  .ant-table-tbody {
+    font-size: small;
+  }
+}
+
+@media (min-width:370px) and (max-width: 481px) {
+  .banner {
+    height: 15rem;
+    //background-image: url("../../../assets/home_481_150.jpg");
+    background: linear-gradient(90deg, rgba(24,30,44,1) 0%, rgba(55,61,73,1) 100%);
+
+  }
+
+  .title-picture {
+    font-size: small;
+  }
+
+  .carte-article {
+    padding: 1rem 0 0;
+  }
+
+  .ant-table-tbody {
+    font-size: small;
+  }
+}
+
+@media (min-width:482px) and (max-width: 1024px) {
+  .banner {
+    height: 35rem;
+    //background: url("../../../assets/home_1024_350.jpg");
+    background: linear-gradient(90deg, rgba(24,30,44,1) 0%, rgba(55,61,73,1) 100%);
+  }
+
+  .title-picture {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .banner {
+    height: 63rem;
+    //background-image: url("../../../assets/home.jpg");
+    background: linear-gradient(90deg, rgba(24,30,44,1) 0%, rgba(55,61,73,1) 100%);
+
+  }
+
+  .title-picture {
+    font-size: 3.4rem;
+  }
+}

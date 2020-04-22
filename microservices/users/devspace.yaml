@@ -1,0 +1,27 @@
+version: v1beta8
+images:
+  default:
+    image: ayal26/users
+deployments:
+- name: users
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: ayal26/users
+      service:
+        ports:
+        - port: 8000
+dev:
+  ports:
+  - imageName: default
+    forward:
+    - port: 8000
+  open:
+  - url: http://localhost:8000
+  sync:
+  - imageName: default
+    excludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml

@@ -1,0 +1,47 @@
+{
+    "env": {
+        "jest": true
+    },
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "rules": {
+        "max-len": 1,
+        "import/no-dynamic-require": 0,
+        "import/no-named-as-default": 0,
+        "import/prefer-default-export": 0,
+        "react/jsx-props-no-spreading" : 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/no-did-update-set-state": 1,
+        "react/require-default-props": 1,
+        "no-console": [
+            2
+        ]
+    },
+    "globals": {
+        "btoa": true,
+        "describe": true,
+        "document": true,
+        "expect": true,
+        "fetch": true,
+        "google": true,
+        "it": true,
+        "jest": true,
+        "localStorage": true,
+        "sessionStorage": true,
+        "location": true,
+        "navigator": true,
+        "Raven": true,
+        "requestAnimationFrame": true,
+        "Stripe": true,
+        "window": true
+    }
+}

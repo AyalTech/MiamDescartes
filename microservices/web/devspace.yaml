@@ -1,0 +1,17 @@
+version: v1beta8
+images:
+  default:
+    image: ayal26/web
+dev:
+  ports:
+  - imageName: default
+    forward:
+    - port: 8080
+  open:
+  - url: http://localhost:8080
+  sync:
+  - imageName: default
+    excludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml

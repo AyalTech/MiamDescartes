@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+
+
+# Ignore DevSpace cache and log folder
+.devspace/

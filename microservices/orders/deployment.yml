@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: order-microservice
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: order-microservice
+    spec:
+      containers:
+        - image: ayal26/order-microservice
+          imagePullPolicy: Always
+          name: user-microservice
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8001
+              scheme: HTTPS
+            initialDelaySeconds: 40
+            periodSeconds: 3
+          ports:
+            - containerPort: 8001

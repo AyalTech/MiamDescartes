@@ -1,0 +1,29 @@
+{
+  "name": "order-microservice",
+  "version": "1.0.0",
+  "description": "Website for jew's restaurant in Descartes",
+  "engines": {
+    "node": "12.10.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "dev_server": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Haddad Ayale",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "concurrently": "^4.1.2",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.7.0",
+    "nodemailer": "^6.3.1",
+    "nodemon": "^1.19.2",
+    "pg": "^7.18.2",
+    "sequelize": "^5.18.4",
+    "xoauth2": "^1.2.0"
+  }
+}
